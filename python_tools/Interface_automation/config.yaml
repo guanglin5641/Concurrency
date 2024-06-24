@@ -1,0 +1,6 @@
+mysql:
+  host: 'rm-bp1xqhp60et1lx5z92o.mysql.rds.aliyuncs.com'
+  port: 3306
+  user: 'taomama'
+  password: '!qazxsw2'
+  database: 'shenquan_dev'

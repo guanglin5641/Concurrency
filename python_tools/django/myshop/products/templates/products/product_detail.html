@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+</head>
+<body>
+    <h1>{{ product.name }}</h1>
+    <p>{{ product.description }}</p>
+    <p>Price: ${{ product.price }}</p>
+    <h2>Variants</h2>
+    <ul>
+        {% for variant in variants %}
+            <li>{{ variant.name }} - {{ variant.variant_type }} - ${{ variant.price }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'product_list' %}">Back to Product List</a>
+</body>
+</html>

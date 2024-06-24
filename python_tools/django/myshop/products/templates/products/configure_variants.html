@@ -1,0 +1,17 @@
+<!-- configure_variants.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>配置商品变体</title>
+</head>
+<body>
+    <h1>配置商品变体</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ type_form.as_p }}
+        {{ variant_form.as_p }}
+        <button type="submit">保存变体</button>
+    </form>
+</body>
+</html>
